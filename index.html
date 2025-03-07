@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        .container {
+         height: 310px;
+         width : 300px;
+        background-color: #d1d1cb;
+        margin: 10px auto;
+        margin-top: 170px;
+            
+        }
+       .container:hover {
+        border: 1px solid black;
+        transition: 1s;
+       }
+       .pot {
+        height: 220px;
+        width: 200px;
+        display: block;
+        margin: 5px auto;
+        padding: 5px;
+       }
+       .btn1 {
+        height: 50px;
+        width: 100px;
+        border-radius: 25px;
+        background-color: #d87ccc;
+        color: black;
+        font-size: 25px;
+        padding: 5px;
+       }
+       .btn2 {
+        height: 50px;
+        width: 100px;
+        border-radius: 25px;
+        background-color: #d87ccc;
+        color: black;
+        font-size: 25px;
+        padding: 5px;
+       }
+       .btn{
+        margin-left :30px;
+        cursor: pointer;
+        margin-top: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <img src="flower_pot.jpg" id="pot" class="pot">
+       <div class="button">
+        <button class="btn1 btn" onclick="empty()">Empty</button>
+        <button class="btn2 btn" onclick="full()">Full</button>
+       </div>
+       </div>
+
+    <script>
+     const basketElement = document.getElementById("pot");
+     
+     function full() {
+        basketElement.src="flower_pot.jpg";
+     }
+     function empty() {
+        basketElement.src="pot.jpg";
+     }
+     </script>
+</body>
+</html>
